@@ -24,4 +24,11 @@ public class AccountDetails {
         System.out.println("Your login is " + login);
         System.out.println("Your account balance is " + balance);
     }
+    public void deposit(){
+        System.out.println("Ile chcesz wpłacić?");
+        long money;
+        money = scanner.nextLong();
+        balance = money + balance;
+
+    }
 }
