@@ -36,7 +36,11 @@ public class AccountDetails {
         System.out.println("Podaj kwotę wypłaty");
         long kwotaWyplaty;
         kwotaWyplaty = scanner.nextLong();
-        balance = balance - kwotaWyplaty;
+        if (balance<kwotaWyplaty) {
+            System.out.println("Brak wystarczających środków");
+        } else {
+            balance = balance - kwotaWyplaty;
+        }
 
     }
 }
