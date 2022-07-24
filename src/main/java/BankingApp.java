@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class BankingApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        AccountDetails account = new  AccountDetails();
         System.out.println("Witaj w aplikacji bankowej");
         int inputNumber;
         do {
@@ -11,7 +12,7 @@ public class BankingApp {
             inputNumber = scanner.nextInt();
             switch (inputNumber) {
                 case 1:
-                    System.out.println("Działa");
+                    account.showAccount();
                     break;
             }
         }
