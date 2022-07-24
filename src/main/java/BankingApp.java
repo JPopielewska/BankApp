@@ -9,7 +9,7 @@ public class BankingApp {
         account.createAccount();
         int inputNumber;
         do {
-            System.out.println("Co chcesz zrobić? \n 1. Pokaż informacje o koncie \n 2. Wpłata gotówki \n 3.Wypłata \n 4. Wyjście");
+            System.out.println("Co chcesz zrobić? \n 1. Pokaż informacje o koncie \n 2. Wpłata gotówki \n 3. Wypłata \n 4. Wyjście");
             inputNumber = scanner.nextInt();
             switch (inputNumber) {
                 case 1:
@@ -17,6 +17,9 @@ public class BankingApp {
                     break;
                 case 2:
                     account.deposit();
+                    break;
+                case 3:
+                    account.withdrawal();
                     break;
             }
         }

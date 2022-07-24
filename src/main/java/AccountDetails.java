@@ -31,4 +31,12 @@ public class AccountDetails {
         balance = money + balance;
 
     }
+
+    public void withdrawal(){
+        System.out.println("Podaj kwotę wypłaty");
+        long kwotaWyplaty;
+        kwotaWyplaty = scanner.nextLong();
+        balance = balance - kwotaWyplaty;
+
+    }
 }
